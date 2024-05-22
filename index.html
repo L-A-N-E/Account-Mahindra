@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en pt-br es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="src/assets/icon/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+        <!-- Style -->
+        <link rel="stylesheet" href="src/style/style.css">
+        <!-- Flex -->
+        <link rel="stylesheet" href="src/style/flex.css">
+        <!-- Grid -->
+        <link rel="stylesheet" href="src/style/grid.css">
+        <!-- Resposividade -->
+        <link rel="stylesheet" href="src/style/responsividade.css">
+
+</head>
+<body id="page-create-account">
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a target="_blank" href="https://www.mahindra.com/motorsports"><img src="src/assets/logo/mahindra.png" alt="Logo-Mahindra"></a>
+        </div>
+
+        <!-- Nav Desktop -->
+        <nav class="nav-desktop">
+            <ul>
+                <!-- Home -->
+                <li><a href="">Home</a></li>
+                <!-- About -->
+                <li><a href="">About</a></li>
+                <!-- Pilots -->
+                <li><a href="">Pilots</a></li>
+                <!-- Ecotracer -->
+                <li><a href="">Ecotracer</a></li>
+                <!-- Language -->
+                <details>
+                    <summary>English</summary>
+                    <ul>
+                        <li><a href="">Portuguese</a></li>
+                        <li><a href="">Spanish</a></li>
+                    </ul>
+                </details>
+            </ul>
+        </nav>
+
+        <!-- Open Mobile -->
+        <div class="btn-open-menu" onclick="openMenu()">
+            <img src="src/assets/menu/open.svg" alt="">
+        </div>
+
+        <!-- Nav Mobile -->
+        <nav class="nav-mobile">
+            <ul>
+                <!-- Close Menu -->
+                <li onclick="closeMenu()"><img src="src/assets/menu/close.svg" alt=""></li>
+                <!-- Home -->
+                <li onclick="closeMenu()"><a href="">Home</a></li>
+                <!-- About -->
+                <li onclick="closeMenu()"><a href="">About</a></li>
+                <!-- Pilots -->
+                <li onclick="closeMenu()"><a href="">Pilots</a></li>
+                <!-- Ecotracer -->
+                <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
+                <!-- Language -->
+                <details>
+                    <summary>English</summary>
+                    <ul>
+                        <li onclick="closeMenu()"><a href="">Portuguese</a></li>
+                        <li onclick="closeMenu()"><a href="">Spanish</a></li>
+                    </ul>
+                </details>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-create">
+        <!-- Content -->
+        <section id="container-account">
+            <!-- Register-->
+            <div class="info-account">
+                <h1>Create an Account</h1>
+                <a href="src/pages/sign-up.html"><button class="sign-up"><span>Sign-Up</span></button></a>
+            </div>
+
+            <!-- Login -->
+            <div class="info-account">
+                <h1>Do you have an Account?</h1>
+                <a href="src/pages/login.html"><button class="login"><span>Login</span></button></a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- JS -->
+    <script src="src/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en pt-br es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/flex.css">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/responsividade.css">
+
+</head>
+<body id="page-login">
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a target="_blank" href="https://www.mahindra.com/motorsports"><img src="../assets/logo/mahindra.png" alt="Logo-Mahindra"></a>
+        </div>
+
+        <!-- Nav Desktop -->
+        <nav class="nav-desktop">
+            <ul>
+                <!-- Home -->
+                <li><a href="">Home</a></li>
+                <!-- About -->
+                <li><a href="">About</a></li>
+                <!-- Pilots -->
+                <li><a href="">Pilots</a></li>
+                <!-- Ecotracer -->
+                <li><a href="">Ecotracer</a></li>
+                <!-- Language -->
+                <details>
+                    <summary>English</summary>
+                    <ul>
+                        <li><a href="">Portuguese</a></li>
+                        <li><a href="">Spanish</a></li>
+                    </ul>
+                </details>
+            </ul>
+        </nav>
+
+        <!-- Open Mobile -->
+        <div class="btn-open-menu" onclick="openMenu()">
+            <img src="src/assets/menu/open.svg" alt="">
+        </div>
+
+        <!-- Nav Mobile -->
+        <nav class="nav-mobile">
+            <ul>
+                <!-- Close Menu -->
+                <li onclick="closeMenu()"><img src="src/assets/menu/close.svg" alt=""></li>
+                <!-- Home -->
+                <li onclick="closeMenu()"><a href="">Home</a></li>
+                <!-- About -->
+                <li onclick="closeMenu()"><a href="">About</a></li>
+                <!-- Pilots -->
+                <li onclick="closeMenu()"><a href="">Pilots</a></li>
+                <!-- Ecotracer -->
+                <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
+                <!-- Language -->
+                <details>
+                    <summary>English</summary>
+                    <ul>
+                        <li onclick="closeMenu()"><a href="">Portuguese</a></li>
+                        <li onclick="closeMenu()"><a href="">Spanish</a></li>
+                    </ul>
+                </details>
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="../script/script.js"></script>
+</body>
+</html>

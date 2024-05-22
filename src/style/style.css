@@ -1,0 +1,293 @@
+/* Var */
+:root {
+    /* colors */
+    --red: #E51635;
+    --red-2: #7a1322;
+    --green: #254D21;
+    --black: #000000;
+    --gray: #171717;
+    --gray-2: #000000a2;
+    --white: #EDEDED;
+    --white-2: #c5c5c5;
+
+    /* border radius */
+    --border-10: 10px;
+    --border-20: 20px;
+    --border-80: 80px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Body */
+body {
+    color: var(--black);
+    background-color: var(--black);
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Header */
+header {
+    background-color: var(--black);
+    padding: 2rem;
+    height: auto;
+}
+
+
+/* Nav Desktop */
+.nav-desktop {
+    right: 2rem;
+    z-index: 1000;
+    position: absolute;
+}
+
+.nav-desktop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-desktop ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-desktop ul li a{
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 2s;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+/* Hover Text Header*/
+.nav-desktop ul li a::after {
+    color: var(--white);
+}
+
+.nav-desktop ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-desktop ul li a.hover-underline::before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* Btn Open Menu */
+.btn-open-menu {
+    display: none;
+}
+
+
+/* Nav Mobile */
+.nav-mobile {
+    width: 50vw;
+    right: 0;
+    background-color: var(--black);
+    padding: 1rem;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+}
+
+.nav-mobile ul li {
+    list-style: none;
+}
+
+.nav-mobile ul li a{
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Language and Hover */
+details {
+    width: 100px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow-y: hidden;
+}
+
+details ul {
+    margin-top: 1rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+details ul li {
+    left: 1rem;
+    position: relative;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    overflow-y: hidden;
+}
+
+summary:hover {
+    color: var(--red);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+summary::marker {
+    display: none;
+}
+
+summary::before {
+    content: '▶';
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: var(--white);
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+    margin-bottom: 1rem;
+}
+
+summary:hover::before {
+    color: var(--red);
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* PAGE ACCOUNT */
+#main-create {
+    width: 100vw;
+    color: var(--white);
+    background-image: url('../assets/background/background-pages/background-1.png');
+    background-clip: content-box;
+    background-repeat: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+#container-account {
+    width: 80%;
+    height: 70%;
+}
+
+
+.info-account h1{
+    text-align: end;
+    font-weight: 300;
+}
+
+/* BTN SIGN UP */
+
+.sign-up {
+    width: 100%;
+    padding: 1rem 4rem;
+    color: var(--white);
+    background-color: var(--white-2);
+    border: none;
+    border-radius: var(--border-10);
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BTN SIGN UP Hover */
+
+.sign-up::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transition: left 0.5s;
+    z-index: 0;
+}
+
+.sign-up:hover::before {
+    left: 0;
+}
+
+.sign-up span {
+    position: relative;
+    z-index: 1;
+    color: var(--red);
+}
+
+
+/* BTN LOGIN */
+
+.login {
+    width: 100%;
+    padding: 1rem 4rem;
+    color: var(--white);
+    background-color: var(--red-2);
+    border: none;
+    border-radius: var(--border-10);
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BTN LOGIN Hover */
+
+.login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    transition: left 0.5s;
+    z-index: 0;
+}
+
+.login:hover::before {
+    left: 0;
+}
+
+.login span {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+/* PAGE LOGIN */

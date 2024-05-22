@@ -1,0 +1,58 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    width: auto;
+    height: auto;
+}
+
+/* Desktop */
+.nav-desktop {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop ul {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+
+/* Mobile */
+
+.nav-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+details ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Account */
+#main-create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-account{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.info-account {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

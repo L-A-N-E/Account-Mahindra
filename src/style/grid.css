@@ -1,0 +1,22 @@
+/* Body Account */
+#page-create-account {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 90vh;
+    overflow-y: hidden;
+}
+
+/* Body Login */
+#page-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 88vh; 
+}
+
+/* Body Sign-Up */
+#page-sign-up {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 88vh; 
+}
+
