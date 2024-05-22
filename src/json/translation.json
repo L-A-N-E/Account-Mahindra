@@ -1,0 +1,39 @@
+{
+    "pt-br": {
+        "lang-es": "Espanhol",
+        "lang-en": "Inglês",
+        "lang-pt-br": "Português",
+        "home": "Início",
+        "about": "Sobre Nós",
+        "pilots": "Pilotos",
+        "text-h1-1": "Criar uma conta",
+        "text-h1-2": "Você tem uma conta?",
+        "sign-up": "Cadastrar-se",
+        "login": "Entrar"
+    },
+    "en": {
+        "lang-pt-br": "Portuguese",
+        "lang-es": "Spanish",
+        "lang-en": "English",
+        "home": "Home",
+        "about": "About",
+        "pilots": "Pilots",
+        "text-h1-1": "Create an Account",
+        "text-h1-2": "Do you have an Account?",
+        "sign-up": "Sign-Up",
+        "login": "Login"
+    },
+    "es": {
+        "lang-pt-br": "Portugués",
+        "lang-en": "Inglés",
+        "lang-es": "Español",
+        "home": "Home",
+        "about": "Sobre",
+        "pilots": "Pilotos",
+        "text-h1-1": "Crea una cuenta",
+        "text-h1-2": "¿Tiene usted una cuenta?",
+        "sign-up": "Inscribirse",
+        "login": "Iniciar sesión"
+
+    }
+}

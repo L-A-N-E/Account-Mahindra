@@ -25,3 +25,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function changeLanguage(language) {
+    fetch('src/json/translation.json').then(response => response.json()).then(data => {
+        //Armazena na variável um objeto que contêm os id/class com as tradução do idioma selecionado
+        let translation = data[language];
+        console.log(translation);
+        //Verifica se o Idioma foi posto de maneira correta
+        if (translation) {
+            //Percorre os objetos dentro de traducoe
+            for (let propries in translation) {
+                //A propriedade é o nome do item do objeto, não o seu valor
+                let element = document.getElementById(propries);
+
+                //Verifica se o elemento é um ID
+                if (element) {
+                   //Já aqui, é o valor do objeto que será mostrado
+                    element.innerText = translation[propries];
+
+                }else{
+                    //A propriedade é o nome do item do objeto, não o seu valor
+                    let elements = document.getElementsByClassName(propries);
+
+                    for (var i = 0; i < elements.length; i++) {
+                        //Já aqui, é o valor do objeto que será mostrado
+                        elements[i].innerText = translation[propries];
+                    }
+                }
+            }
+        } else {
+
+            console.error('Language Not Supported:', language);
+
+        }
+    }).catch(error => console.error('Error:', error));
+}
+
+
+
