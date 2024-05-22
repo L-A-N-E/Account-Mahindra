@@ -25,3 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+// Seleciona o elemento <details>
+const details = document.getElementById('languageDetails');
+        
+// Seleciona todas as opções de idiomas
+const options = document.querySelectorAll('.languageOption');
+
+// Adiciona um listener de clique a cada opção
+options.forEach(option => {
+    option.addEventListener('click', function(event) {
+        // Fecha o elemento <details>
+        details.open = false;
+    });
+});
