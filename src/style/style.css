@@ -64,7 +64,7 @@ header {
 
 .nav-desktop ul li a{
     text-decoration: none;
-    color: var(--white);
+    color: white;
     text-transform: uppercase;
     font-weight: 500;
     transition: all 2s;

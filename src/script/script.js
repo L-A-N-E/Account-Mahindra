@@ -92,4 +92,5 @@ function changeLanguage(language) {
 
         }
     }).catch(error => console.error('Error:', error));
+    closeLanguage();
 }
