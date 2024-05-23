@@ -44,13 +44,16 @@
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <details id="languageDetails">
-                    <summary id="lang-en" onclick="changeLanguage('en')">English</summary>
-                    <ul>
-                        <li class="languageOption"><a id="lang-pt-br" onclick="changeLanguage('pt-br')">Portuguese</a></li>
-                        <li class="languageOption"><a id="lang-es" onclick="changeLanguage('es')">Spanish</a></li>
+                <li id="language-effect" onmousemove="openLanguage()">
+                    <a id="lang-gap">
+                        <img id="arrow-lang" src="src/assets/arrow/arrow-red.svg" alt="">Language
+                    </a>
+                    <ul id="language" onmouseleave="closeLanguage()">
+                        <li onclick="changeLanguage('en')"><a>English</a></li>
+                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
+                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
                     </ul>
-                </details>
+                </li>
             </ul>
         </nav>
 
@@ -73,13 +76,16 @@
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <details>
-                    <summary id="lang-en" onclick="changeLanguage('en')">English</summary>
-                    <ul>
-                        <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
-                        <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
+                <li id="language-effect" onclick="openLanguage()">
+                    <a id="lang-gap">
+                        <img id="arrow-lang" src="src/assets/arrow/arrow-red.svg" alt="">Language
+                    </a>
+                    <ul id="language">
+                        <li onclick="changeLanguage('en')"><a>English</a></li>
+                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
+                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
                     </ul>
-                </details>
+                </li>
             </ul>
         </nav>
     </header>

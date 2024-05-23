@@ -53,14 +53,13 @@ header {
 
 .nav-desktop ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 1rem;
     margin: 0;
 }
 
 .nav-desktop ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 15px;
 }
 
 .nav-desktop ul li a{
@@ -73,6 +72,29 @@ header {
     position: relative;
     display: inline-block;
     padding-bottom: 2px;
+}
+
+/* Language */
+#language {
+    padding: 0;
+    margin-left: 1rem;
+}
+
+#lang-gap {
+    cursor: pointer;
+}
+
+#language li {
+    cursor: pointer;
+}
+
+/* Effect Arrow Down */
+#arrow-lang {
+    transition: transform 0.3s ease;
+}
+
+#language-effect:hover #arrow-lang {
+    transform: rotate(90deg);
 }
 
 /* Hover Text Header*/
@@ -126,63 +148,6 @@ header {
     font-weight: 500;
 }
 
-/* Language and Hover */
-details {
-    width: 100px;
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    overflow-y: hidden;
-}
-
-details ul {
-    margin-top: 1rem;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-details ul li {
-    left: 1rem;
-    position: relative;
-    font-weight: 300;
-    font-size: 12px;
-}
-
-
-summary {
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    gap: 5px;
-    overflow-y: hidden;
-}
-
-summary:hover {
-    color: var(--red);
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-summary::marker {
-    display: none;
-}
-
-summary::before {
-    content: '▶';
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: var(--white);
-}
-
-details[open] summary::before {
-    transform: rotate(90deg);
-    margin-bottom: 1rem;
-}
-
-summary:hover::before {
-    color: var(--red);
-}
 
 /* ----------------------------------------------------------------------- */
 

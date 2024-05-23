@@ -11,6 +11,20 @@ function closeMenu(){
 }
 
 
+// Open Language
+function openLanguage(){
+    const openLanguage = document.querySelector('#language')
+    openLanguage.style.display = 'flex'
+}
+
+// Close Language
+function closeLanguage(){
+    const closeLanguage = document.querySelector('#language')
+    closeLanguage.style.display = 'none'
+}
+
+
+
 // Effect Hover
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.nav-desktop ul li a');
