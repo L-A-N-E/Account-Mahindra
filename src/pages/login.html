@@ -32,50 +32,56 @@
         <nav class="nav-desktop">
             <ul>
                 <!-- Home -->
-                <li><a href="">Home</a></li>
+                <li><a href="" id="home" >Home</a></li>
                 <!-- About -->
-                <li><a href="">About</a></li>
+                <li><a href="" id="about">About</a></li>
                 <!-- Pilots -->
-                <li><a href="">Pilots</a></li>
+                <li><a href="" id="pilots">Pilots</a></li>
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <details id="languageDetails">
-                    <summary>English</summary>
-                    <ul>
-                        <li><a href="">Portuguese</a></li>
-                        <li><a href="">Spanish</a></li>
+                <li id="language-effect" onmousemove="openLanguage()">
+                    <a id="lang-gap">
+                        <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
+                    </a>
+                    <ul id="language" onmouseleave="closeLanguage()">
+                        <li onclick="changeLanguage('en')"><a id="lang-en">English</a></li>
+                        <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
+                        <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
                     </ul>
-                </details>
+                </li>
             </ul>
         </nav>
 
         <!-- Open Mobile -->
         <div class="btn-open-menu" onclick="openMenu()">
-            <img src="src/assets/menu/open.svg" alt="">
+            <img src="../assets/menu/open.svg" alt="">
         </div>
 
         <!-- Nav Mobile -->
         <nav class="nav-mobile">
             <ul>
                 <!-- Close Menu -->
-                <li onclick="closeMenu()"><img src="src/assets/menu/close.svg" alt=""></li>
+                <li onclick="closeMenu()"><img src="../assets/menu/close.svg" alt=""></li>
                 <!-- Home -->
-                <li onclick="closeMenu()"><a href="">Home</a></li>
+                <li onclick="closeMenu()" id="home"><a href="">Home</a></li>
                 <!-- About -->
-                <li onclick="closeMenu()"><a href="">About</a></li>
+                <li onclick="closeMenu()" id="about"><a href="">About</a></li>
                 <!-- Pilots -->
-                <li onclick="closeMenu()"><a href="">Pilots</a></li>
+                <li onclick="closeMenu()" id="pilots"><a href="">Pilots</a></li>
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <details>
-                    <summary>English</summary>
-                    <ul>
-                        <li onclick="closeMenu()"><a href="">Portuguese</a></li>
-                        <li onclick="closeMenu()"><a href="">Spanish</a></li>
+                <li id="language-effect">
+                    <a id="lang-gap">
+                        <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
+                    </a>
+                    <ul id="language">
+                        <li onclick="changeLanguage('en')"><a>English</a></li>
+                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
+                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
                     </ul>
-                </details>
+                </li>
             </ul>
         </nav>
     </header>
