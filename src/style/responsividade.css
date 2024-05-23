@@ -11,8 +11,8 @@
     }
 
     .btn-open-menu {
-        display: block;
-        margin-top:0.5rem;
+        display: flex;
+        align-items: center;
     }
 
     #language {

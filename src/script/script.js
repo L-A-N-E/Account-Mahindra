@@ -1,3 +1,4 @@
+// Function Menu
 // Open Menu Mobile
 function openMenu(){
     const open = document.querySelector('.nav-mobile')
@@ -11,6 +12,7 @@ function closeMenu(){
 }
 
 
+// Function Language
 // Open Language
 function openLanguage(){
     const openLanguage = document.querySelector('#language')
