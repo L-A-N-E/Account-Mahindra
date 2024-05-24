@@ -75,8 +75,15 @@ header {
 }
 
 /* Language */
-#language {
+#language-mob {
     padding: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#language-desk {
+    padding: 0;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
@@ -252,7 +259,82 @@ header {
     color: var(--white);
 }
 
+.red {
+    color: var(--red);
+    border-bottom: solid 2px var(--red);
+}
 
 /* ----------------------------------------------------------------------- */
 
 /* PAGE LOGIN */
+
+
+/* ----------------------------------------------------------------------- */
+
+/* PAGE SIGN-UP */
+
+#main-sign-up {
+    color: var(--white);
+    background-image: url('../assets/background/background-main.png');
+    background-position: bottom;
+    background-size: cover;    
+}
+
+.sec-acc {
+    background-color: var(--gray-2);  
+    border-radius: var(--border-10);  
+}
+
+/* Center */
+
+.form-group {
+    font-size: 15px;
+}
+
+.form-group input {
+    border-radius: var(--border-10);
+    background: transparent;
+    border: solid 1px var(--white);
+    color: var(--white);
+    font-size: 11px;
+}
+
+input, #name, #email, #password {
+    padding: 0.6rem 1rem 0.6rem 0.3rem;
+}
+
+.form-group input::placeholder {
+    color: var(--white);
+}
+
+/* Bottom */
+.back-acc {
+    background: transparent;
+}
+
+.text-back {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.upper {
+    text-transform: uppercase;
+    width: 50%;
+}
+
+
+.btn-back {
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    transition: all ease 300ms;
+}
+
+.btn-back:hover {
+    transition: ease 300ms;
+    transform: scale(1.1);
+}

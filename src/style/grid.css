@@ -10,15 +10,14 @@
 #page-login {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 88vh;
-    overflow-y: hidden; 
+    grid-template-rows: auto 90vh;
+    overflow-y: hidden;
 }
 
 /* Body Sign-Up */
 #page-sign-up {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 88vh;
-    overflow-y: hidden; 
+    grid-template-rows: auto 84.5vh;
 }
 

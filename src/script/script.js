@@ -13,18 +13,31 @@ function closeMenu(){
 
 
 // Function Language
-// Open Language
-function openLanguage(){
-    const openLanguage = document.querySelector('#language')
-    openLanguage.style.display = 'flex'
+// Open Language Desktop
+function openLanguageD(){
+    const openLanguageD = document.querySelector('#language-desk')
+    openLanguageD.style.display = 'flex'
 }
 
 // Close Language
-function closeLanguage(){
-    const closeLanguage = document.querySelector('#language')
-    closeLanguage.style.display = 'none'
+function closeLanguageD(){
+    const closeLanguageD = document.querySelector('#language-desk')
+    closeLanguageD.style.display = 'none'
 }
 
+/////////////////////////////////////////////////////
+
+// Open Language Mobile
+function openLanguageM(){
+    const openLanguageM = document.querySelector('#language-mob')
+    openLanguageM.style.display = 'flex'
+}
+
+// Close Language
+function closeLanguageM(){
+    const closeLanguageM = document.querySelector('#language-mob')
+    closeLanguageM.style.display = 'none'
+}
 
 
 // Effect Hover
@@ -92,5 +105,6 @@ function changeLanguage(language) {
 
         }
     }).catch(error => console.error('Error:', error));
-    closeLanguage();
+    closeLanguageM()
+    closeLanguageD();
 }

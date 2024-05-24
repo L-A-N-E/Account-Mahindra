@@ -15,8 +15,8 @@
         align-items: center;
     }
 
-    #language {
-        display: flex;
+    #language-mob{
+        display: none;
     }
 
     /* Account */
@@ -33,6 +33,12 @@
     .info-account h1{
         text-align: center;
     }
+
+    /* Sign-Up */
+    .sec-acc {
+        width: 80vw;
+    }
+
 }
 
 /* Mobile */
