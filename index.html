@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en pt-br es">
+<html id="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +36,11 @@
         <nav class="nav-desktop">
             <ul>
                 <!-- Home -->
-                <li><a href="" id="home" >Home</a></li>
+                <li><a href="" class="home"></a></li>
                 <!-- About -->
-                <li><a href="" id="about">About</a></li>
+                <li><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li><a href="" id="pilots">Pilots</a></li>
+                <li><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -49,9 +49,9 @@
                         <img id="arrow-lang" src="src/assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-desk" onmouseleave="closeLanguageD()">
-                        <li onclick="changeLanguage('en')"><a id="lang-en">English</a></li>
-                        <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -68,11 +68,11 @@
                 <!-- Close Menu -->
                 <li onclick="closeMenu()"><img src="src/assets/menu/close.svg" alt=""></li>
                 <!-- Home -->
-                <li onclick="closeMenu()" id="home"><a href="">Home</a></li>
+                <li onclick="closeMenu()"><a href="" class="home"></a></li>
                 <!-- About -->
-                <li onclick="closeMenu()" id="about"><a href="">About</a></li>
+                <li onclick="closeMenu()"><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li onclick="closeMenu()" id="pilots"><a href="">Pilots</a></li>
+                <li onclick="closeMenu()"><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -81,9 +81,9 @@
                         <img id="arrow-lang" src="src/assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-mob">
-                        <li onclick="changeLanguage('en')"><a>English</a></li>
-                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -96,14 +96,14 @@
         <section id="container-account">
             <!-- Register-->
             <div class="info-account">
-                <h1 class="text-h1-1">Create an Account</h1>
-                <a href="src/pages/sign-up.html"><button class="sign-up"><span id="sign-up">Sign-Up</span></button></a>
+                <h1 id="text-h1-1"></h1>
+                <a href="src/pages/sign-up.html"><button class="sign-up"><span class="sign-up-text"></span></button></a>
             </div>
 
             <!-- Login -->
             <div class="info-account">
-                <h1 class="text-h1-2">Do you have an Account?</h1>
-                <a href="src/pages/login.html"><button class="login"><span id="login">Login</span></button></a>
+                <h1 id="text-h1-2"></h1>
+                <a href="src/pages/login.html"><button class="login"><span class="login-text"></span></button></a>
             </div>
         </section>
     </main>

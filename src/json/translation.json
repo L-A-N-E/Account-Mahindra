@@ -8,8 +8,8 @@
         "pilots": "Pilotos",
         "text-h1-1": "Criar uma conta",
         "text-h1-2": "Você tem uma conta?",
-        "sign-up": "Cadastrar-se",
-        "login": "Entrar"
+        "sign-up-text": "Cadastrar-se",
+        "login-text": "Entrar"
     },
     "en": {
         "lang-pt-br": "Portuguese",
@@ -20,8 +20,8 @@
         "pilots": "Pilots",
         "text-h1-1": "Create an Account",
         "text-h1-2": "Do you have an Account?",
-        "sign-up": "Sign-Up",
-        "login": "Login"
+        "sign-up-text": "Sign-Up",
+        "login-text": "Login"
     },
     "es": {
         "lang-pt-br": "Portugués",
@@ -32,8 +32,7 @@
         "pilots": "Pilotos",
         "text-h1-1": "Crea una cuenta",
         "text-h1-2": "¿Tiene usted una cuenta?",
-        "sign-up": "Inscribirse",
-        "login": "Iniciar sesión"
-
+        "sign-up-text": "Inscribirse",
+        "login-text": "Iniciar sesión"
     }
 }

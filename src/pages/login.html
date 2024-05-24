@@ -32,11 +32,11 @@
         <nav class="nav-desktop">
             <ul>
                 <!-- Home -->
-                <li><a href="" id="home" >Home</a></li>
+                <li><a href="" class="home" ></a></li>
                 <!-- About -->
-                <li><a href="" id="about">About</a></li>
+                <li><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li><a href="" id="pilots">Pilots</a></li>
+                <li><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -45,9 +45,9 @@
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-desk" onmouseleave="closeLanguageD()">
-                        <li onclick="changeLanguage('en')"><a id="lang-en">English</a></li>
-                        <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -64,11 +64,11 @@
                 <!-- Close Menu -->
                 <li onclick="closeMenu()"><img src="../assets/menu/close.svg" alt=""></li>
                 <!-- Home -->
-                <li onclick="closeMenu()" id="home"><a href="">Home</a></li>
+                <li onclick="closeMenu()"><a href="" class="home"></a></li>
                 <!-- About -->
-                <li onclick="closeMenu()" id="about"><a href="">About</a></li>
+                <li onclick="closeMenu()"><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li onclick="closeMenu()" id="pilots"><a href="">Pilots</a></li>
+                <li onclick="closeMenu()"><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -77,9 +77,9 @@
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-mob">
-                        <li onclick="changeLanguage('en')"><a>English</a></li>
-                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -109,7 +109,7 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Password: ">
                     </div>
-                    <a href="src/pages/login.html"><button class="login mg-top"><span id="login">Login</span></button></a>
+                    <a href="src/pages/login.html"><button class="login mg-top"><span class="login-text"></span></button></a>
                 </form>
             </div>
 
