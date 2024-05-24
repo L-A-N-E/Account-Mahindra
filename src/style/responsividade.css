@@ -39,6 +39,11 @@
         width: 80vw;
     }
 
+    .align-txt {
+        text-align: center;
+    }
+    
+
 }
 
 /* Mobile */
@@ -64,6 +69,11 @@
     }
 
     .login {
+        padding: 1rem;
+    }
+
+    /* PAGE LOGIN / SIGN-UP */
+    .sec-acc {
         padding: 1rem;
     }
 }

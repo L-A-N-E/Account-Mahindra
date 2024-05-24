@@ -40,11 +40,11 @@
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <li id="language-effect" onmousemove="openLanguage()">
+                <li id="language-effect" onmousemove="openLanguageD()">
                     <a id="lang-gap">
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
-                    <ul id="language" onmouseleave="closeLanguage()">
+                    <ul id="language-desk" onmouseleave="closeLanguageD()">
                         <li onclick="changeLanguage('en')"><a id="lang-en">English</a></li>
                         <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
                         <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
@@ -72,11 +72,11 @@
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
-                <li id="language-effect">
+                <li id="language-effect" onclick="openLanguageM()">
                     <a id="lang-gap">
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
-                    <ul id="language">
+                    <ul id="language-mob">
                         <li onclick="changeLanguage('en')"><a>English</a></li>
                         <li onclick="changeLanguage('es')"><a>Spanish</a></li>
                         <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
@@ -86,6 +86,7 @@
         </nav>
     </header>
 
+
     <!-- Content -->
     <main id="main-login">
         <!-- Sign-Up -->
@@ -93,17 +94,13 @@
             <!-- TOP -->
             <div class="top-acc">
                 <div>
-                    <h1>SIGN-UP <strong class="red">NOW</strong></h1>
+                    <h1 class="align-txt">LOGIN <strong class="red">NOW</strong></h1>
                 </div>
             </div>
             
             <!-- CENTER -->
             <div class="center-acc">
                 <form class="acc-dados">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name: ">
-                    </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="E-mail: ">
@@ -112,15 +109,15 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Password: ">
                     </div>
-                    <a href="src/pages/login.html"><button class="sign-up mg-top"><span id="login">Sign-Up</span></button></a>
+                    <a href="src/pages/login.html"><button class="login mg-top"><span id="login">Login</span></button></a>
                 </form>
             </div>
 
             <!-- BOTTOM -->
             <div class="bottom-acc">
                 <div class="back-acc">
-                    <h1 class="text-back">Do you have an Account?</h1>
-                    <h3 class="text-back upper"><a href=""><button class="btn-back">Login</button></a></h3>
+                    <h1 class="text-back">You don't have an Account?</h1>
+                    <h3 class="text-back upper"><a href="../pages/sign-up.html"><button class="btn-back">Sign-Up</button></a></h3>
                 </div>
             </div>
         </section>

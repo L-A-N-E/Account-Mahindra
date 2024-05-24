@@ -72,6 +72,14 @@ details ul{
 }
 
 
+/* PAGE LOGIN */
+#main-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* PAGE SIGN-UP */
 #main-sign-up {
     display: flex;
