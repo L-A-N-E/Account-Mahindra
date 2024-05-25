@@ -260,10 +260,15 @@ header {
     color: var(--white);
 }
 
-.red {
+.red-signup {
     color: var(--red);
     border-bottom: solid 2px var(--red);
 }
+.red-login {
+    color: var(--red);
+    border-bottom: solid 2px var(--red);
+}
+
 
 /* ----------------------------------------------------------------------- */
 
