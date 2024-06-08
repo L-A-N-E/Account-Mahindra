@@ -36,25 +36,67 @@ body {
 
 /* ----------------------------------------------------------------------- */
 
+/* Body Account  */
+#page-create-account {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 90vh;
+    overflow-y: hidden;
+}
+
+/* Body Login */
+#page-login {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 90vh;
+    overflow-y: hidden;
+}
+
+/* Body Sign-Up */
+#page-sign-up {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 90vh;
+    overflow-y: hidden;
+}
+
+/* ------------------------------------------------------------------------ */
+
 /* Header */
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--black);
     padding: 2rem;
     height: auto;
 }
 
+/* Logo */
+.logo {
+    width: auto;
+    height: auto;
+}
 
 /* Nav Desktop */
 .nav-desktop {
+    display: flex;
+    align-items: center;
     right: 2rem;
     z-index: 1000;
     position: absolute;
 }
 
 .nav-desktop ul {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
     list-style-type: none;
     padding: 0 1rem;
     margin: 0;
+    
 }
 
 .nav-desktop ul li {
@@ -82,6 +124,12 @@ header {
 }
 
 #language-desk {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    cursor: pointer;
     padding: 0;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -89,6 +137,8 @@ header {
 
 #lang-gap {
     cursor: pointer;
+    display: flex;
+    gap: 0.2rem;
 }
 
 #language li {
@@ -144,6 +194,12 @@ header {
     z-index: 1000;
 }
 
+.nav-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .nav-mobile ul li {
     list-style: none;
 }
@@ -161,6 +217,9 @@ header {
 /* PAGE ACCOUNT */
 #main-create {
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white);
     background-image: url('../assets/background/background-pages/background-1.png');
     background-clip: content-box;
@@ -170,10 +229,20 @@ header {
 }
 
 #container-account {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
     width: 80%;
     height: 70%;
 }
 
+.info-account {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 .info-account h1{
     text-align: end;
@@ -269,6 +338,9 @@ header {
 /* PAGE LOGIN */
 
 #main-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
     background-image: url('../assets/background/background-main.png');
     background-position: bottom;
@@ -281,6 +353,9 @@ header {
 /* PAGE SIGN-UP */
 
 #main-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
     background-image: url('../assets/background/background-main.png');
     background-position: bottom;
@@ -288,17 +363,44 @@ header {
 }
 
 .sec-acc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    padding: 4rem 3rem 1rem;
+    gap: 2rem;
     background-color: var(--gray-2);  
     border-radius: var(--border-10);  
 }
 
 /* Center */
 
+.center-acc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.acc-dados {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
 .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-size: 15px;
 }
 
 .form-group input {
+    width: 100%;
+    padding: 0.7rem 1.4rem;
     border-radius: var(--border-10);
     background: transparent;
     border: solid 1px var(--white);
@@ -314,8 +416,16 @@ input, #name, #email, #password {
     color: var(--white);
 }
 
+.mg-top {
+    margin-top: 1rem;
+}
+
 /* Bottom */
 .back-acc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     background: transparent;
 }
 
