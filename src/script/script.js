@@ -80,10 +80,10 @@ function changeLanguage(language) {
 
     var arquive_json = ''
 
-    if(url_atual.includes("index.html")){
-        var arquive_json = 'src/json/translation.json'
-    }else{
+    if(url_atual.includes("sign-up.html") || url_atual.includes("login.html")){
         var arquive_json = '../json/translation.json'
+    }else{
+        var arquive_json = './src/json/translation.json'
     }
     // Armazena a preferência de idioma no localStorage
     localStorage.setItem('preferredLanguage', language);
