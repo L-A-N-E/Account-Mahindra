@@ -71,40 +71,50 @@ options.forEach(option => {
     });
 });
 
-
+// Função para alterar o idioma com base no ID ou classe do elemento
 function changeLanguage(language) {
-    fetch('src/json/translation.json').then(response => response.json()).then(data => {
-        //Armazena na variável um objeto que contêm os id/class com as tradução do idioma selecionado
-        let translation = data[language];
-        console.log(translation);
-        //Verifica se o Idioma foi posto de maneira correta
-        if (translation) {
-            //Percorre os objetos dentro de traducoe
-            for (let propries in translation) {
-                //A propriedade é o nome do item do objeto, não o seu valor
-                let element = document.getElementById(propries);
+    // Atualiza o atributo "lang" da tag <html>
+    document.documentElement.lang = language;
 
-                //Verifica se o elemento é um ID
-                if (element) {
-                   //Já aqui, é o valor do objeto que será mostrado
-                    element.innerText = translation[propries];
+    var url_atual = window.location.href;
 
-                }else{
-                    //A propriedade é o nome do item do objeto, não o seu valor
-                    let elements = document.getElementsByClassName(propries);
+    var arquive_json = ''
 
-                    for (var i = 0; i < elements.length; i++) {
-                        //Já aqui, é o valor do objeto que será mostrado
-                        elements[i].innerText = translation[propries];
-                    }
-                }
+    if(url_atual.includes("index.html")){
+        var arquive_json = 'src/json/translation.json'
+    }else{
+        var arquive_json = '../json/translation.json'
+    }
+    // Armazena a preferência de idioma no localStorage
+    localStorage.setItem('preferredLanguage', language);
+
+    // Aqui você pode adicionar lógica adicional, como carregar traduções específicas para o idioma selecionado.
+    // Por exemplo, usando um arquivo JSON com as traduções.
+    fetch(arquive_json)
+        .then(response => response.json())
+        .then(data => {
+            let translation = data[language];
+            if (translation) {
+                Object.keys(translation).forEach(propries => {
+                    // Obtém os elementos pelo ID ou pela classe
+                    let elements = document.querySelectorAll(`#${propries}, .${propries}`);
+                    elements.forEach(element => {
+                        element.innerText = translation[propries];
+                    });
+                });
+            } else {
+                console.error('Idioma não suportado:', language);
             }
-        } else {
+        })
+        .catch(error => console.error('Erro:', error));
 
-            console.error('Language Not Supported:', language);
-
-        }
-    }).catch(error => console.error('Error:', error));
-    closeLanguageM()
+    closeLanguageM();
     closeLanguageD();
+}
+
+// Verifica se há uma preferência de idioma armazenada no localStorage
+const preferredLanguage = localStorage.getItem('preferredLanguage');
+changeLanguage(preferredLanguage)
+if (preferredLanguage) {
+    changeLanguage(preferredLanguage);
 }

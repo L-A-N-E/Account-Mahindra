@@ -11,6 +11,7 @@
     --white-2: #c5c5c5;
 
     /* border radius */
+    --border-5: 5px;
     --border-10: 10px;
     --border-20: 20px;
     --border-80: 80px;
@@ -328,10 +329,15 @@ header {
     color: var(--white);
 }
 
-.red {
+.red-signup {
     color: var(--red);
     border-bottom: solid 2px var(--red);
 }
+.red-login {
+    color: var(--red);
+    border-bottom: solid 2px var(--red);
+}
+
 
 /* ----------------------------------------------------------------------- */
 
@@ -443,7 +449,7 @@ input, #name, #email, #password {
 
 .btn-back {
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-5);
     color: var(--white);
     cursor: pointer;
     padding: 0.5rem 1rem;

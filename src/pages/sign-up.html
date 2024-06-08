@@ -30,11 +30,11 @@
         <nav class="nav-desktop">
             <ul>
                 <!-- Home -->
-                <li><a href="" id="home" >Home</a></li>
+                <li><a href="" class="home" ></a></li>
                 <!-- About -->
-                <li><a href="" id="about">About</a></li>
+                <li><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li><a href="" id="pilots">Pilots</a></li>
+                <li><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -43,9 +43,9 @@
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-desk" onmouseleave="closeLanguageD()">
-                        <li onclick="changeLanguage('en')"><a id="lang-en">English</a></li>
-                        <li onclick="changeLanguage('es')"><a id="lang-es">Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a id="lang-pt-br">Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -62,11 +62,11 @@
                 <!-- Close Menu -->
                 <li onclick="closeMenu()"><img src="../assets/menu/close.svg" alt=""></li>
                 <!-- Home -->
-                <li onclick="closeMenu()" id="home"><a href="">Home</a></li>
+                <li onclick="closeMenu()"><a href="" class="home"></a></li>
                 <!-- About -->
-                <li onclick="closeMenu()" id="about"><a href="">About</a></li>
+                <li onclick="closeMenu()"><a href="" class="about"></a></li>
                 <!-- Pilots -->
-                <li onclick="closeMenu()" id="pilots"><a href="">Pilots</a></li>
+                <li onclick="closeMenu()"><a href="" class="pilots"></a></li>
                 <!-- Ecotracer -->
                 <li onclick="closeMenu()"><a href="">Ecotracer</a></li>
                 <!-- Language -->
@@ -75,9 +75,9 @@
                         <img id="arrow-lang" src="../assets/arrow/arrow-red.svg" alt="">Language
                     </a>
                     <ul id="language-mob">
-                        <li onclick="changeLanguage('en')"><a>English</a></li>
-                        <li onclick="changeLanguage('es')"><a>Spanish</a></li>
-                        <li onclick="changeLanguage('pt-br')"><a>Portuguese</a></li>
+                        <li onclick="changeLanguage('en')"><a class="lang-en"></a></li>
+                        <li onclick="changeLanguage('es')"><a class="lang-es"></a></li>
+                        <li onclick="changeLanguage('pt-br')"><a class="lang-pt-br"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -92,7 +92,7 @@
             <!-- TOP -->
             <div class="top-acc">
                 <div>
-                    <h1 class="align-txt">SIGN-UP <strong class="red">NOW</strong></h1>
+                    <h1 class="align-txt-signup">SIGN UP <strong class="red-signup"></strong></h1>
                 </div>
             </div>
             
@@ -100,7 +100,7 @@
             <div class="center-acc">
                 <form class="acc-dados">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name" class="name"></label>
                         <input type="text" id="name" name="name" placeholder="Name: ">
                     </div>
                     <div class="form-group">
@@ -108,21 +108,21 @@
                         <input type="email" id="email" name="email" placeholder="E-mail: ">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password" class="password"></label>
                         <input type="password" id="password" name="password" placeholder="Password: ">
                     </div>
                     <div class="form-group">
-                        <label for="password">Repeat Password</label>
+                        <label for="password" class="repeat-password"></label>
                         <input type="password" id="password" name="password" placeholder="Password: ">
                     </div>
-                    <a href="src/pages/login.html"><button class="sign-up mg-top"><span id="sign-up">Sign-Up</span></button></a>
+                    <a href="src/pages/login.html"><button class="sign-up mg-top"><span id="sign-up-text">Sign-Up</span></button></a>
                 </form>
             </div>
 
             <!-- BOTTOM -->
             <div class="bottom-acc">
                 <div class="back-acc">
-                    <h1 class="text-back">You do have an Account?</h1>
+                    <h1 class="text-back" id="ja-tem-conta">You do have an Account?</h1>
                     <h3 class="text-back upper"><a href="../pages/login.html"><button class="btn-back">Login</button></a></h3>
                 </div>
             </div>

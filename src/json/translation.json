@@ -4,12 +4,19 @@
         "lang-en": "Inglês",
         "lang-pt-br": "Português",
         "home": "Início",
-        "about": "Sobre Nós",
+        "about": "Sobre",
         "pilots": "Pilotos",
         "text-h1-1": "Criar uma conta",
         "text-h1-2": "Você tem uma conta?",
-        "sign-up": "Cadastrar-se",
-        "login": "Entrar"
+        "sign-up-text": "Cadastrar-se",
+        "login-text": "Entrar",
+        "name":"Nome",
+        "password":"Senha",
+        "repeat-password":"Repita a senha",
+        "red-signup":"AGORA",
+        "ja-tem-conta":"Você já tem uma conta?",
+        "red-login":"AGORA"
+        
     },
     "en": {
         "lang-pt-br": "Portuguese",
@@ -20,20 +27,32 @@
         "pilots": "Pilots",
         "text-h1-1": "Create an Account",
         "text-h1-2": "Do you have an Account?",
-        "sign-up": "Sign-Up",
-        "login": "Login"
+        "sign-up-text": "Sign-Up",
+        "login-text": "Login",
+        "name": "Name",
+        "password":"Password",
+        "repeat-password":"Repeat Password",
+        "red-signup":"NOW",
+        "ja-tem-conta":"Do you already have an Account?",
+        "red-login":"NOW"
+        
     },
     "es": {
         "lang-pt-br": "Portugués",
         "lang-en": "Inglés",
         "lang-es": "Español",
-        "home": "Home",
+        "home": "Inicio",
         "about": "Sobre",
         "pilots": "Pilotos",
         "text-h1-1": "Crea una cuenta",
         "text-h1-2": "¿Tiene usted una cuenta?",
-        "sign-up": "Inscribirse",
-        "login": "Iniciar sesión"
-
+        "sign-up-text": "Inscribirse",
+        "login-text": "Iniciar sesión",
+        "name": "Nombre",
+        "password":"Contraseña",
+        "repeat-password":"Repetir contraseña",
+        "red-signup":"AHORA",
+        "ja-tem-conta":"Ya tienes una cuenta?",
+        "red-login":"AHORA"
     }
 }
