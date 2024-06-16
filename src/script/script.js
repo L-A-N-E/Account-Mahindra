@@ -114,7 +114,11 @@ function changeLanguage(language) {
 
 // Verifica se há uma preferência de idioma armazenada no localStorage
 const preferredLanguage = localStorage.getItem('preferredLanguage');
-changeLanguage(preferredLanguage)
+if(preferredLanguage == null){
+    changeLanguage(en)
+}else{
+    changeLanguage(preferredLanguage)
+}
 if (preferredLanguage) {
     changeLanguage(preferredLanguage);
 }
