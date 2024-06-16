@@ -75,7 +75,7 @@ options.forEach(option => {
 function changeLanguage(language) {
     // Atualiza o atributo "lang" da tag <html>
     document.documentElement.lang = language;
-
+    
     // Armazena a preferência de idioma no localStorage
     localStorage.setItem('preferredLanguage', language);
 
@@ -109,9 +109,8 @@ function changeLanguage(language) {
 
 // Verifica se há uma preferência de idioma armazenada no localStorage
 const preferredLanguage = localStorage.getItem('preferredLanguage');
-if (preferredLanguage) {
+if (preferredLanguage != null) {
     changeLanguage(preferredLanguage);
 } else {
-    preferredLanguage = 'en';
     changeLanguage('en'); // Define 'en' como idioma padrão se não houver preferência armazenada
 }
