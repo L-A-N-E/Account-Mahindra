@@ -74,12 +74,15 @@ options.forEach(option => {
 // Cache de elementos traduzíveis para evitar buscas repetidas no DOM
 const elementsCache = {};
 
+// Variável global para armazenar a preferência de idioma
+let currentLanguage = 'en'; // Define 'en' como o idioma padrão
+
 function changeLanguage(language) {
+    // Se language for null ou undefined, mantém o idioma atual
+    currentLanguage = language || currentLanguage;
+
     // Atualiza o atributo "lang" da tag <html>
-    document.documentElement.lang = language;
-    
-    // Armazena a preferência de idioma no localStorage
-    localStorage.setItem('preferredLanguage', language);
+    document.documentElement.lang = currentLanguage;
 
     // Define o caminho correto para o arquivo JSON de traduções
     const url_atual = window.location.href;
@@ -89,7 +92,7 @@ function changeLanguage(language) {
     fetch(arquive_json)
         .then(response => response.json())
         .then(data => {
-            const translation = data[language];
+            const translation = data[currentLanguage];
             if (translation) {
                 Object.keys(translation).forEach(propries => {
                     // Verifica se os elementos já estão em cache
@@ -102,7 +105,7 @@ function changeLanguage(language) {
                     });
                 });
             } else {
-                console.error('Idioma não suportado:', language);
+                console.error('Idioma não suportado:', currentLanguage);
             }
         })
         .catch(error => console.error('Erro ao carregar traduções:', error));
@@ -110,6 +113,5 @@ function changeLanguage(language) {
 
 // Carrega a preferência de idioma quando a página é carregada
 document.addEventListener('DOMContentLoaded', () => {
-    const preferredLanguage = localStorage.getItem('preferredLanguage') || 'en';
-    changeLanguage(preferredLanguage);
+    changeLanguage(currentLanguage);
 });
