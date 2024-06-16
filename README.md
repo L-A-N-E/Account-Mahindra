@@ -8,7 +8,3 @@
 * Eduardo Oliveira Cardoso Madid - RM:556349
 * Lucas Henzo Ide Yuki - RM:554865
 * Nicolas Haubricht Hainfellner - RM:556259
-
-## Acesso ao projeto
-
-[Link para o site]()
