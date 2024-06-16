@@ -112,5 +112,6 @@ const preferredLanguage = localStorage.getItem('preferredLanguage');
 if (preferredLanguage) {
     changeLanguage(preferredLanguage);
 } else {
+    preferredLanguage = 'en';
     changeLanguage('en'); // Define 'en' como idioma padrão se não houver preferência armazenada
 }
