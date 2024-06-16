@@ -76,20 +76,14 @@ function changeLanguage(language) {
     // Atualiza o atributo "lang" da tag <html>
     document.documentElement.lang = language;
 
-    var url_atual = window.location.href;
-
-    var arquive_json = ''
-
-    if(url_atual.includes("sign-up.html") || url_atual.includes("login.html")){
-        var arquive_json = '../json/translation.json'
-    }else{
-        var arquive_json = './src/json/translation.json'
-    }
     // Armazena a preferência de idioma no localStorage
     localStorage.setItem('preferredLanguage', language);
 
-    // Aqui você pode adicionar lógica adicional, como carregar traduções específicas para o idioma selecionado.
-    // Por exemplo, usando um arquivo JSON com as traduções.
+    // Define o caminho correto para o arquivo JSON de traduções
+    var url_atual = window.location.href;
+    var arquive_json = url_atual.includes("sign-up.html") || url_atual.includes("login.html") ? '../json/translation.json' : './src/json/translation.json';
+
+    // Carrega traduções específicas para o idioma selecionado
     fetch(arquive_json)
         .then(response => response.json())
         .then(data => {
@@ -106,19 +100,17 @@ function changeLanguage(language) {
                 console.error('Idioma não suportado:', language);
             }
         })
-        .catch(error => console.error('Erro:', error));
+        .catch(error => console.error('Erro ao carregar traduções:', error));
 
+    // Supondo que estas funções existam em algum lugar do seu código
     closeLanguageM();
     closeLanguageD();
 }
 
 // Verifica se há uma preferência de idioma armazenada no localStorage
 const preferredLanguage = localStorage.getItem('preferredLanguage');
-if(preferredLanguage == null){
-    changeLanguage(en)
-}else{
-    changeLanguage(preferredLanguage)
-}
 if (preferredLanguage) {
     changeLanguage(preferredLanguage);
+} else {
+    changeLanguage('en'); // Define 'en' como idioma padrão se não houver preferência armazenada
 }
